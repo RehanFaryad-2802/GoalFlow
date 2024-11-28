@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do App | HAMIZUSE</title>
+  </head>
+  <body>
+    <header>
+      <div class="anousment">
+        <h1 class="c">To Dos App</h1>
+      </div>
+      <div class="controler">
+        <div class="takeTaskInput f jcsb">
+          <input
+            class="inputTask cw"
+            placeholder="Enter your task here..."
+            spellcheck="false"
+            type="text"
+            name=""
+            id="task"
+            autofocus
+          />
+          <div class="priority f aic gap">
+            <div class="options">
+              <input
+                type="radio"
+                class="dn pri"
+                name="priority"
+                value="Important"
+                id="1"
+              />
+              <label class="cp" for="1">
+                <div class="box red"></div>
+              </label>
+            </div>
+            <div class="options">
+              <input
+                type="radio"
+                class="dn pri"
+                name="priority"
+                value="Medium"
+                id="2"
+              />
+              <label class="cp" for="2">
+                <div class="box green"></div>
+              </label>
+            </div>
+            <div class="options">
+              <input
+                type="radio"
+                class="dn pri"
+                name="priority"
+                value="Low"
+                id="3"
+              />
+              <label class="cp" for="3">
+                <div class="box blue"></div>
+              </label>
+            </div>
+            <div class="options">
+              <input
+                type="radio"
+                checked
+                class="dn pri"
+                name="priority"
+                value="Normal"
+                id="4"
+              />
+              <label class="cp" for="4">
+                <div class="box yellow"></div>
+              </label>
+            </div>
+          </div>
+          <div class="right f">
+            <input class="deadline cp" type="datetime-local" name="" id="" />
+            <button type="submit" class="btn add cp">Creat</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ------------------ -->
+    <div class="all_tasks">
+      <div class="task_controler">
+        <div class="main-box f jcsb aic">
+            <div class="f33 total-task f gap aic">
+              <button class="save">Save</button>
+                <p class="cw"></p>
+                <span class="cw">| Done : 0</span>
+            </div>
+            <div class="f33 color f jcc gap">
+                <div title="Pro version required." class="color box red"></div>
+                <div title="Pro version required." class="color box green"></div>
+                <div title="Pro version required." class="color box blue"></div>
+                <div title="Pro version required." class="color box yellow"></div>
+                <div title="Pro version required." class="color box orange"></div>
+            </div>
+            <div class="f33 current-time f jce">
+                <p class="cw"></p>
+            </div>
+        </div>
+        <div class="control">
+          <!-- --------- Task --------- -->
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ -->
+    <script src="script.js"></script>
+  </body>
+</html>

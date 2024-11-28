@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Gantari", sans-serif;
+  user-select: none;
+}
+body {
+  background-color: #000000e0;
+  height: 100vh;
+  overflow: hidden;
+}
+.f {
+  display: flex;
+}
+.fdc {
+  flex-direction: column;
+}
+.fw {
+  flex-wrap: wrap;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: end;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.jcse {
+  justify-content: space-around;
+}
+
+.aic {
+  align-items: center;
+}
+.dfa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f33 {
+  flex: 0 0 33.33%;
+}
+.c {
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+.takeTaskInput {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #4d4d4d;
+  /* border: 2px solid black; */
+  border-radius: 12px;
+}
+.cp {
+  cursor: pointer;
+}
+.deadline {
+  width: 17px;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.takeTaskInput > input {
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4d4d4d;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+.right button {
+  border-radius: 12px;
+  border: none;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: #000000;
+  color: #ffffff;
+}
+.right button:hover {
+  background-color: #00000087;
+}
+.right input {
+  margin: 0 12px;
+}
+.controler {
+  background-color: #1f1f1f;
+  padding: 10px;
+}
+.task_controler {
+  background-color: #1f1f1f;
+  height: 100vh;
+}
+.main-box {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px 8px 0 0;
+  background-color: #141414b6;
+  padding: 20px 40px;
+}
+.control {
+  background-color: #141414;
+  max-width: 950px;
+  margin: 0 auto;
+  overflow: auto;
+  height: 73%;
+}
+.control::-webkit-scrollbar {
+  width: 5px;
+}
+.control::-webkit-scrollbar-thumb {
+  background-color: #00000084;
+  border-radius: 2rem;
+}
+.task {
+  padding: 15px;
+  cursor: pointer;
+  max-height: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task .text h4 {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gap {
+  column-gap: 10px;
+}
+.task h4 {
+  color: #ffffff;
+}
+.task:hover {
+  background-color: #474747;
+}
+.cw {
+  color: #ffffff;
+}
+.priority {
+  margin: 0 8px;
+}
+.priority.Important {
+  background-color: red;
+  padding: 2px;
+}
+.priority.Medium {
+  background-color: green;
+  padding: 2px;
+}
+.priority.Low {
+  background-color: skyblue;
+  padding: 2px;
+}
+.priority.Normal {
+  background-color: #a8a800;
+  padding: 2px;
+}
+.box {
+  width: 10px;
+  height: 10px;
+  border-radius: 3rem;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: skyblue;
+}
+.yellow {
+  background-color: #a8a800;
+}
+.orange {
+  background-color: #ffaa00;
+}
+.dn {
+  display: none;
+}
+input:checked ~ label .box {
+  border: 1px solid #ffffffb9;
+}
+.lucide-x:hover {
+  /* stroke: #ff0000; */
+  background-color: red;
+}
+.line2,
+.line2 > div,
+.line2 p {
+  color: #ffffff7a;
+}
+.line > div,
+.line p,
+.line {
+  text-decoration: line-through;
+  color: #ffffff7a !important;
+}
+label.lab {
+  width: 100%;
+}
+.color {
+  cursor: no-drop;
+}
+@media screen and (max-width: 600px) {
+  .color {
+    display: none;
+  }
+  .current-time,
+  .total-task {
+    flex: 0 0 50%;
+  }
+}
+.save{
+  border: none;
+  outline: none;
+  color: #3ed801;
+  background-color: black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+@media screen and (max-width: 600px){
+   .task{
+    flex-direction: column;
+    background-color: #000000;
+    border: 1px solid white;
+   }
+}
+@media screen and (max-width: 500px){
+   .main-box{
+    flex-direction: column;
+   }
+}
+@media screen and (max-width: 300px){
+   .priority{
+    flex-direction: column;
+    row-gap: 3px;
+   }
+   .main-box{
+    padding: 10px;
+   }
+}
